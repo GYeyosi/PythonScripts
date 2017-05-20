@@ -1,18 +1,35 @@
 {
-    "Usage of /dev/sda8": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
-    }, 
     "ram": {
         "total": "7890 MB", 
-        "free": "6276 MB", 
-        "used": "1130 MB"
+        "free": "6719 MB", 
+        "used": "771 MB"
     }, 
     "disk_part": {
-        "mount_point": "/media/root/OS", 
-        "Disk Type": "fuseblk", 
-        "Name": "/dev/sda4"
+        "/dev/sda4": {
+            "mount_point": "/media/root/OS", 
+            "Disk Type": "fuseblk", 
+            "name": "/dev/sda4"
+        }, 
+        "/dev/sda7": {
+            "mount_point": "/", 
+            "Disk Type": "ext4", 
+            "name": "/dev/sda7"
+        }, 
+        "/dev/sda8": {
+            "mount_point": "/boot", 
+            "Disk Type": "ext4", 
+            "name": "/dev/sda8"
+        }, 
+        "/dev/sda9": {
+            "mount_point": "/home", 
+            "Disk Type": "ext4", 
+            "name": "/dev/sda9"
+        }, 
+        "/dev/sda1": {
+            "mount_point": "/boot/efi", 
+            "Disk Type": "vfat", 
+            "name": "/dev/sda1"
+        }
     }, 
     "sys": {
         "cpu_count": 4, 
@@ -27,38 +44,13 @@
         "hostname": "kali", 
         "teminal": "tty2"
     }, 
-    "Usage of /dev/sda1": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
-    }, 
-    "Usage of /dev/sda9": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
-    }, 
     "memory": {
         "total_space": "32726 MB", 
-        "used_space": "18027 MB", 
-        "free_memory": "13013 MB"
-    }, 
-    "Usage of /dev/sda7": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
-    }, 
-    "Usage of /dev/sda5": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
-    }, 
-    "Usage of /dev/sda4": {
-        "Used": "0GB", 
-        "Total": "3GB", 
-        "Free": "3GB"
+        "used_space": "18026 MB", 
+        "free_memory": "13014 MB"
     }, 
     "battery_info": {
-        "pecentage": 14.78457760627611, 
+        "pecentage": 41.04038854805726, 
         "time_left": "-1:59:58"
     }
 }

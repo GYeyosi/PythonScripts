@@ -1,0 +1,46 @@
+{
+    "ram": {
+        "total": "8094 MB", 
+        "free": "5634 MB", 
+        "used": "2459 MB"
+    }, 
+    "disk_part": {
+        "E:\\": {
+            "mount_point": "E:\\", 
+            "Disk Type": "NTFS", 
+            "name": "E:\\"
+        }, 
+        "D:\\": {
+            "mount_point": "D:\\", 
+            "Disk Type": "NTFS", 
+            "name": "D:\\"
+        }, 
+        "C:\\": {
+            "mount_point": "C:\\", 
+            "Disk Type": "NTFS", 
+            "name": "C:\\"
+        }
+    }, 
+    "sys": {
+        "cpu_count": 4, 
+        "version": "10.0.15063", 
+        "os": "Windows", 
+        "processor": "Intel64 Family 6 Model 61 Stepping 4, GenuineIntel", 
+        "machine_type": "AMD64"
+    }, 
+    "user_info": {
+        "username": "koush", 
+        "host": "0.140.93.100", 
+        "hostname": "DESKTOP-I45GAP6", 
+        "teminal": null
+    }, 
+    "memory": {
+        "total_space": "190773 MB", 
+        "used_space": "62240 MB", 
+        "free_memory": "128533 MB"
+    }, 
+    "battery_info": {
+        "pecentage": 35, 
+        "time_left": "-1:59:58"
+    }
+}
