@@ -34,5 +34,20 @@ dictionary['sys']['cpu_count']=psutil.cpu_count()
 dictionary['battery_info']={}
 dictionary['battery_info']['pecentage']=psutil.sensors_battery().percent
 dictionary['battery_info']['time_left']=func(psutil.sensors_battery().secsleft)
+disks=psutil.disk_partitions()
+dictionary['disk_part']={}
+for disk in disks:
+        dictionary['disk_part']={}
+        dictionary['disk_part']["Name"]=disk.device
+        dictionary['disk_part']["mount_point"]=disk.mountpoint
+        dictionary['disk_part']["Disk Type"]=disk.fstype
+for disk in disks:
+        temp=psutil.disk_usage(''+disk.device)
+        dictionary["Usage of "+disk.device]={}
+        dictionary["Usage of "+disk.device]["Total"]=str((temp.total)>>30)+'GB'
+        dictionary["Usage of "+disk.device]["Used"]=str((temp.used)>>30)+'GB'
+	dictionary["Usage of "+disk.device]["Free"]=str((temp.free)>>30)+'GB'
+
+
 with open(filename,"w") as properties:
 				json.dump(dictionary, properties,ensure_ascii=False,indent=4)
