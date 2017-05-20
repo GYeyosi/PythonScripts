@@ -1,0 +1,29 @@
+{
+    "sys": {
+        "cpu_count": 4, 
+        "version": "#1 SMP Debian 4.9.18-1kali1 (2017-04-04)", 
+        "os": "Linux", 
+        "processor": "", 
+        "machine_type": "x86_64"
+    }, 
+    "user_info": {
+        "username": "root", 
+        "host": "localhost", 
+        "hostname": "kali", 
+        "teminal": "tty2"
+    }, 
+    "ram": {
+        "total": "7890 MB", 
+        "free": "6644 MB", 
+        "used": "845 MB"
+    }, 
+    "battery_info": {
+        "pecentage": 29.29113924050633, 
+        "time_left": "0:46:36"
+    }, 
+    "memory": {
+        "total_space": "32726 MB", 
+        "used_space": "18022 MB", 
+        "free_memory": "13018 MB"
+    }
+}
