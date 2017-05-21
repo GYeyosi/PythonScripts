@@ -1,20 +1,15 @@
 {
     "ram": {
+        "used": "563 MB", 
+        "cached": "443 MB", 
+        "free": "6982 MB", 
+        "inactive": "327 MB", 
+        "active": "613 MB", 
+        "shared": "111 MB", 
         "total": "7890 MB", 
-        "free": "6719 MB", 
-        "used": "771 MB"
+        "buffers": "73 MB"
     }, 
     "disk_part": {
-        "/dev/sda4": {
-            "mount_point": "/media/root/OS", 
-            "Disk Type": "fuseblk", 
-            "name": "/dev/sda4"
-        }, 
-        "/dev/sda7": {
-            "mount_point": "/", 
-            "Disk Type": "ext4", 
-            "name": "/dev/sda7"
-        }, 
         "/dev/sda8": {
             "mount_point": "/boot", 
             "Disk Type": "ext4", 
@@ -24,6 +19,21 @@
             "mount_point": "/home", 
             "Disk Type": "ext4", 
             "name": "/dev/sda9"
+        }, 
+        "/dev/sda4": {
+            "mount_point": "/media/root/OS", 
+            "Disk Type": "fuseblk", 
+            "name": "/dev/sda4"
+        }, 
+        "/dev/sda5": {
+            "mount_point": "/media/root/my files", 
+            "Disk Type": "fuseblk", 
+            "name": "/dev/sda5"
+        }, 
+        "/dev/sda7": {
+            "mount_point": "/", 
+            "Disk Type": "ext4", 
+            "name": "/dev/sda7"
         }, 
         "/dev/sda1": {
             "mount_point": "/boot/efi", 
@@ -46,11 +56,11 @@
     }, 
     "memory": {
         "total_space": "32726 MB", 
-        "used_space": "18026 MB", 
-        "free_memory": "13014 MB"
+        "used_space": "18137 MB", 
+        "free_memory": "12904 MB"
     }, 
     "battery_info": {
-        "pecentage": 41.04038854805726, 
-        "time_left": "-1:59:58"
+        "pecentage": 54.29891650732951, 
+        "time_left": "1:59:53"
     }
 }

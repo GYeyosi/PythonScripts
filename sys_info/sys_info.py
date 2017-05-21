@@ -21,9 +21,21 @@ dictionary['memory']['total_space']=str(psutil.disk_usage(".").total>>20)+" MB"
 dictionary['memory']['used_space']=str(psutil.disk_usage(".").used>>20)+" MB"
 dictionary['memory']['free_memory']=str(psutil.disk_usage(".").free>>20)+" MB"
 dictionary['ram']={}
-dictionary['ram']['total']=str(psutil.virtual_memory().total>>20)+" MB"
-dictionary['ram']['used']=str(psutil.virtual_memory().used>>20)+" MB"
-dictionary['ram']['free']=str(psutil.virtual_memory().available>>20)+" MB"
+if platform.system()!='Windows':
+	dictionary['ram']['total']=str(psutil.virtual_memory().total>>20)+" MB"
+	dictionary['ram']['used']=str(psutil.virtual_memory().used>>20)+" MB"
+	dictionary['ram']['available']=str(psutil.virtual_memory().available>>20)+" MB"
+	dictionary['ram']['active']=str(psutil.virtual_memory().active>>20)+" MB"
+	dictionary['ram']['free']=str(psutil.virtual_memory().free>>20)+" MB"
+	dictionary['ram']['inactive']=str(psutil.virtual_memory().inactive>>20)+" MB"
+	dictionary['ram']['buffers']=str(psutil.virtual_memory().buffers>>20)+" MB"
+	dictionary['ram']['shared']=str(psutil.virtual_memory().shared>>20)+" MB"
+	dictionary['ram']['cached']=str(psutil.virtual_memory().cached>>20)+" MB"
+if platform.system()== 'Windows':
+	dictionary['ram']['total']=str(psutil.virtual_memory().total>>20)+" MB"
+	dictionary['ram']['used']=str(psutil.virtual_memory().used>>20)+" MB"
+	dictionary['ram']['free']=str(psutil.virtual_memory().available>>20)+" MB"
+	dictionary['ram']['percent']=str(psutil.virtual_memory().percent)
 dictionary['user_info']={}
 users=psutil.users()
 for user in users:
