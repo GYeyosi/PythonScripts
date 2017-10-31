@@ -20,4 +20,7 @@
 		Sender then types in the path of the file name including the filename 
 		That's it the file gets transfered
 		
-		
+# VideoChat_through_lan
+		This has two scripts one sender, one reciever.
+		Sender runs the script and waits for the reciever to enter ip of sender.
+		That's it the video streaming starts.
